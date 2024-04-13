@@ -1,5 +1,5 @@
 {% set name = "great_tables" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/great-tables-{{ version }}.tar.gz
-  sha256: f88fa94b53d49d206040f80ba30c466f36427071a3c96eaaf77b153dab7cd769
+  sha256: 2873d8350563cbf3904c5b64f0b72a8b46f7a5125654cffe0d59b019545f28b4
 
 build:
   noarch: python
@@ -16,22 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - setuptools >=45
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - commonmark >=0.9.1
     - htmltools >=0.4.1
     - importlib-metadata
     - typing-extensions >=3.10.0.0
-    - packaging >=20.9
-    - pandas >=1.4.2
     - numpy >=1.22.4
     - babel >=2.13.1
-    - mizani >=0.9.3
     - webcolors >=1.13
+    - importlib-resources
 
 test:
   imports:
