@@ -1,5 +1,5 @@
 {% set name = "great_tables" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a7aaffadedb7196604cc668cf4289aab607aedaea9a29e593ffe17c5b1595de5
+  sha256: d23c98f663466e6dab9fccbfdf1bb130155a923e0c9be0131257da7215038b69
 
 build:
   noarch: python
