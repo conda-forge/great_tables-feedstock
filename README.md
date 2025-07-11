@@ -29,7 +29,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-great_tables-green.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-great__tables-green.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/great_tables.svg)](https://anaconda.org/conda-forge/great_tables) |
 
 Installing great_tables
 =======================
