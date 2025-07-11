@@ -25,7 +25,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - commonmark >=0.9.1
-    - css_inline >=0.14.1
     - faicons >=0.2.2
     - htmltools >=0.4.1
     - importlib-metadata
