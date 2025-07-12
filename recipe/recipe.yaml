@@ -1,0 +1,56 @@
+schema_version: 1
+
+context:
+  name: great_tables
+  version: 0.18.0
+  python_min: 3.9
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 7e5773e878ba20f2aa2e00e511f8aae2bc31bdda90a6441756d0719276d7b164
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=45
+    - setuptools-scm >=6.2
+    - pip
+    - wheel
+  run:
+    - python >=${{ python_min }}
+    - commonmark >=0.9.1
+    - faicons >=0.2.2
+    - htmltools >=0.4.1
+    - importlib-metadata
+    - typing_extensions >=3.10.0.0
+    - numpy >=1.22.4
+    - babel >=2.13.1
+    - importlib-resources
+
+tests:
+  - python:
+      imports:
+        - great_tables
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: Easily generate information-rich, publication-quality tables from Python.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/posit-dev/great-tables
+  documentation: https://posit-dev.github.io/great-tables/
+
+extra:
+  recipe-maintainers:
+    - timkpaine
+    - thewchan
