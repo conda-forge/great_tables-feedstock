@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: great_tables
   version: "0.19.0"
-  python_min: 3.9
 
 package:
   name: ${{ name|lower }}
@@ -32,7 +31,6 @@ requirements:
     - htmltools >=0.4.1
     - importlib-metadata
     - typing_extensions >=3.10.0.0
-    - numpy >=1.22.4
     - babel >=2.13.1
     - importlib-resources
 
