@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: great_tables
-  version: "0.23.0"
+  version: "0.24.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: dc45bb80642e109608688e38edd88e6883cbf38fd00e4617fc0dadfa51b9bad4
+  sha256: 287e9e2b213a87745cdd1fd538756e9c6af39cbc66a28b678526b613716f536b
 
 build:
   number: 0
@@ -40,7 +40,9 @@ tests:
       imports:
         - great_tables
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Easily generate information-rich, publication-quality tables from Python.
