@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: great_tables
-  version: "0.24.0"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 287e9e2b213a87745cdd1fd538756e9c6af39cbc66a28b678526b613716f536b
+  sha256: d0d4a05f6cc15bd553c4654dc9e7a8b38288b1f7219444056bb68b698f0791c7
 
 build:
   number: 0
