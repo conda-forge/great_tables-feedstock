@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: great_tables
-  version: "1.1.0"
+  version: "1.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 847ae518a21f982c19ba6d2b495932bef766241068eded0d6a788a364acdb07d
+  sha256: bdaf1457168445702cf6dab5447090b2762ac38da41bc44df0fa2254f5448769
 
 build:
   number: 0
@@ -27,8 +27,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - multimark >=0.1.3
-    - faicons >=0.2.2
-    - htmltools >=0.4.1
     - importlib-metadata
     - nokap >=0.1.0
     - typing_extensions >=3.10.0.0
